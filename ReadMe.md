@@ -5,3 +5,7 @@ Ad-Client
 适用所有的window系统
 死机自动重启动功能.
 图片socket进行http上传功能
+
+使用到的技术：
+1. chrome cef开源框架
+2. json
