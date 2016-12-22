@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E33804D3-20FF-4927-BC25-4C45401AFC9D}</ProjectGuid>
+    <RootNamespace>Kehu</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>FriendMoeny</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>I:\项目源码\Kehu1227_2\Kehu\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;I:\项目源码\Kehu1227_2\Kehu\libcef.lib;I:\项目源码\Kehu1227_2\Kehu\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);NDEBUG;_NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);I:\项目源码\Kehu1227_2\Kehu;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;I:\项目源码\Kehu1227_2\Kehu\libcef.lib;I:\项目源码\Kehu1227_2\Kehu\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib</AdditionalDependencies>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="allvar.h" />
+    <ClInclude Include="cmd5.h" />
+    <ClInclude Include="CWebClient.h" />
+    <ClInclude Include="explorer1.h" />
+    <ClInclude Include="GetSysInfo.h" />
+    <ClInclude Include="MMenu.h" />
+    <ClInclude Include="MyTracker.h" />
+    <ClInclude Include="News.h" />
+    <ClInclude Include="SaveRect.h" />
+    <ClInclude Include="json\autolink.h" />
+    <ClInclude Include="json\config.h" />
+    <ClInclude Include="json\features.h" />
+    <ClInclude Include="json\forwards.h" />
+    <ClInclude Include="json\reader.h" />
+    <ClInclude Include="json\value.h" />
+    <ClInclude Include="json\writer.h" />
+    <ClInclude Include="Kehu.h" />
+    <ClInclude Include="KehuDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScreepJieTu.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TcpSocket.h" />
+    <ClInclude Include="WMI_DeviceQuery.h" />
+    <ClInclude Include="_SetingMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cmd5.cpp" />
+    <ClCompile Include="CWebClient.cpp" />
+    <ClCompile Include="explorer1.cpp" />
+    <ClCompile Include="GetSysInfo.cpp" />
+    <ClCompile Include="json_reader.cpp">
+      <UndefinePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </UndefinePreprocessorDefinitions>
+      <UndefineAllPreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</UndefineAllPreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="json_value.cpp" />
+    <ClCompile Include="json_writer.cpp">
+      <UndefinePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">是</UndefinePreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Kehu.cpp" />
+    <ClCompile Include="KehuDlg.cpp" />
+    <ClCompile Include="MMenu.cpp" />
+    <ClCompile Include="MyTracker.cpp" />
+    <ClCompile Include="News.cpp" />
+    <ClCompile Include="ScreepJieTu.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WMI_DeviceQuery.cpp" />
+    <ClCompile Include="_SetingMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Kehu.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\arrow_m.cur" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\icon\gif1.bin" />
+    <None Include="res\Kehu.rc2" />
+    <None Include="res\move_r.cur" />
+    <None Include="res\size1_r.cur" />
+    <None Include="res\size2_r.cur" />
+    <None Include="res\size3_r.cur" />
+    <None Include="res\size4_r.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\图标\bitmap23.bmp" />
+    <Image Include="..\图标\bitmap24.bmp" />
+    <Image Include="..\图标\三角形.bmp" />
+    <Image Include="..\图标\刷新.bmp" />
+    <Image Include="..\图标\前进亮.bmp" />
+    <Image Include="..\图标\前进暗.bmp" />
+    <Image Include="..\图标\去接任务.gif" />
+    <Image Include="..\图标\后退亮.bmp" />
+    <Image Include="..\图标\后退暗.bmp" />
+    <Image Include="..\图标\管理任务.png" />
+    <Image Include="beijing.bmp" />
+    <Image Include="res\beijing.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon\1.bmp" />
+    <Image Include="res\icon\2.bmp" />
+    <Image Include="res\icon\3.bmp" />
+    <Image Include="res\icon\4.bmp" />
+    <Image Include="res\icon\5.bmp" />
+    <Image Include="res\icon\6.bmp" />
+    <Image Include="res\icon\7.bmp" />
+    <Image Include="res\icon\bitmap10.bmp" />
+    <Image Include="res\icon\bitmap12.bmp" />
+    <Image Include="res\icon\bitmap9.bmp" />
+    <Image Include="res\icon\close.ico" />
+    <Image Include="res\icon\cloth.ico" />
+    <Image Include="res\icon\gotasklist.bmp" />
+    <Image Include="res\icon\manager.bmp" />
+    <Image Include="res\icon\min.ico" />
+    <Image Include="res\icon\task.bmp" />
+    <Image Include="res\icon\ToCT.bmp" />
+    <Image Include="res\icon\toolbar2.bmp" />
+    <Image Include="res\icon\toolbar4.bmp" />
+    <Image Include="res\icon\usercenter.bmp" />
+    <Image Include="res\icon\三角形.bmp" />
+    <Image Include="res\icon\刷新.bmp" />
+    <Image Include="res\icon\前进亮.bmp" />
+    <Image Include="res\icon\前进暗.bmp" />
+    <Image Include="res\icon\后退亮.bmp" />
+    <Image Include="res\icon\后退暗.bmp" />
+    <Image Include="res\icon\后退暗1.bmp" />
+    <Image Include="res\icon\新3.bmp" />
+    <Image Include="res\icon\新4-1.bmp" />
+    <Image Include="res\icon\新4.bmp" />
+    <Image Include="res\icon\新5-1.bmp" />
+    <Image Include="res\icon\新5.bmp" />
+    <Image Include="res\icon\新6.bmp" />
+    <Image Include="res\icon\新7.bmp" />
+    <Image Include="res\icon\用户默认头像.bmp" />
+    <Image Include="res\icon\管理任务.png" />
+    <Image Include="res\icon\菜单1.bmp" />
+    <Image Include="res\icon\菜单2.bmp" />
+    <Image Include="res\icon\菜单3.bmp" />
+    <Image Include="res\icon\菜单4.bmp" />
+    <Image Include="res\icon\菜单5.bmp" />
+    <Image Include="res\icon\菜单6.bmp" />
+    <Image Include="res\icon\菜单7.bmp" />
+    <Image Include="res\icon\菜单8.bmp" />
+    <Image Include="res\icon\菜单9.bmp" />
+    <Image Include="res\icon\菜单背景.bmp" />
+    <Image Include="res\Kehu.ico" />
+    <Image Include="res\title.ico" />
+    <Image Include="res\toolbar2.bmp" />
+    <Image Include="res\toolbar3.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties _x007B_8856F961-340A-11D0-A96B-00C04FD705A2_x007D_="CExplorer1" RESOURCE_FILE="Kehu.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Kehu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KehuDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="explorer1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="allvar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GetSysInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WMI_DeviceQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="News.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreepJieTu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CWebClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_SetingMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Kehu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KehuDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="explorer1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GetSysInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WMI_DeviceQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="News.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreepJieTu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWebClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_SetingMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="json_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="json_value.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="json_writer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Kehu.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Kehu.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\move_r.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\size1_r.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\size2_r.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\size3_r.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\size4_r.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\arrow_m.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon\gif1.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\title.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="beijing.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\beijing.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\close.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\cloth.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\min.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\task.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\manager.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\ToCT.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\usercenter.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\gotasklist.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\toolbar4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\toolbar2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\去接任务.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\管理任务.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\bitmap10.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\bitmap9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\后退暗.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\后退亮.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\前进暗.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\前进亮.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\刷新.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\三角形.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\bitmap23.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\图标\bitmap24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\后退暗.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\后退亮.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\前进暗.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\前进亮.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\刷新.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\三角形.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\管理任务.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\bitmap12.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\后退暗1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Kehu.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\菜单背景.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\新7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\用户默认头像.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\新3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\新4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\新5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\新6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\新4-1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon\新5-1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
